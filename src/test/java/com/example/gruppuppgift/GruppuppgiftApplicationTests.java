@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(classes = Calculator.class)
+//@Test(classes = Calculator.class)
 class GruppuppgiftApplicationTests {
 
 	private Calculator calculator;
@@ -29,20 +29,24 @@ class GruppuppgiftApplicationTests {
 	public void testAddition(){
 		answer = calculator.addition(d1,d2);
 		assertEquals(15,answer);
+		System.out.println("addition: " + answer);
 	}
 	@Test
 	public void testSubtraction(){
 		answer = calculator.subtraction(d1,d2);
 		assertEquals(5,answer);
+		System.out.println("subtraction: " +answer);
 	}
 	@Test
 	public void testMultiplication(){
 		answer = calculator.multiplication(d1,d2);
 		assertEquals(50,answer);
+		System.out.println("multiplication: " + answer);
 	}
 	@Test
 	public void testDivision(){
 		answer = calculator.division(d1,d2);
 		assertEquals(2,answer);
+		System.out.println("Division: " + answer);
 	}
 }
