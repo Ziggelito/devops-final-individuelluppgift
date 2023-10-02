@@ -18,8 +18,7 @@ class ControllerTest {
                 .get("/add?d1=10&d2=5")
                 .then()
                 .statusCode(200)
-        //Någonting behövs här men det funkar som det är nu.
-                /*.body("answer", equalTo("15.0"))*/;
+                .body(equalTo("15.0"));
     }
     @Test
     public void testingControllerSubtraction(){
@@ -30,7 +29,8 @@ class ControllerTest {
                 .when()
                 .get("/subtract?d1=10&d2=5")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body(equalTo("5.0"));
     }
     @Test
     public void testingControllerMultiplication(){
@@ -41,7 +41,9 @@ class ControllerTest {
                 .when()
                 .get("/multiply?d1=10&d2=5")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body(equalTo("50.0"));
+        System.out.println("multiTest");
     }
     @Test
     public void testingControllerDivision(){
@@ -52,7 +54,8 @@ class ControllerTest {
                 .when()
                 .get("/divide?d1=10&d2=5")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body(equalTo("2.0"));
     }
 
 }
