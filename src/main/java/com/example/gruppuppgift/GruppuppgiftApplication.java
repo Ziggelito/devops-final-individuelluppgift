@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GruppuppgiftApplication {
 
 	public static void main(String[] args) {
-		Calculator calculator = new Calculator();
-		SpringApplication.run(CalculatorController.class, args);
-
+		SpringApplication.run(GruppuppgiftApplication.class, args);
 	}
 
 }
