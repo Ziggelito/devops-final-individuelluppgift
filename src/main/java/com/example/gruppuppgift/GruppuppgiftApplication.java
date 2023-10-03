@@ -8,7 +8,7 @@ public class GruppuppgiftApplication {
 
 	public static void main(String[] args) {
 		Calculator calculator = new Calculator();
-		SpringApplication.run(Controller.class, args);
+		SpringApplication.run(CalculatorController.class, args);
 
 	}
 
