@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
         @RequestMapping("/add")
-        public double useAddition(double d1, double d2){
+        public double useAdditionChange(double d1, double d2){
 
             double answer = Calculator.addition(d1, d2);
             return answer;
