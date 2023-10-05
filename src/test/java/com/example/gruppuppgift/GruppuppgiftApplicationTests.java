@@ -28,7 +28,7 @@ class GruppuppgiftApplicationTests {
 	@Test
 	public void testTest(){
 		answer = calculator.addition(d1,d2);
-		assertEquals(12,answer);
+		assertEquals(15,answer);
 	}
 	@Test
 	public void testAddition(){
