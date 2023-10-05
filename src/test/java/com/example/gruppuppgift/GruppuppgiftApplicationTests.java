@@ -26,6 +26,11 @@ class GruppuppgiftApplicationTests {
 		calculator = null;
 	}
 	@Test
+	public void testTest(){
+		answer = calculator.addition(d1,d2);
+		assertEquals(12,answer);
+	}
+	@Test
 	public void testAddition(){
 		answer = calculator.addition(d1,d2);
 		assertEquals(15,answer);
